@@ -62,8 +62,8 @@ export const productController = async (
         200,
         res,
         true,
-        'Products retrieved successfully',
-        products
+        'Products created successfully',
+        createdProduct
       )
     } catch (error) {
       return sendResponse(500, res, false, 'Products creation failed!', error)
@@ -104,7 +104,7 @@ export const productController = async (
         res,
         true,
         'Product deleted successfully',
-        products[index]
+        null
       )
     } catch (error) {
       return sendResponse(500, res, false, 'Something went wrong', error)
