@@ -1,44 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Wireless Mechanical Keyboard",
-    "slug": "wireless-mechanical-keyboard",
-    "brand": "KeyNova",
-    "category": "Electronics",
-    "price": 89.99,
-    "discountPrice": 74.99,
-    "stock": 15,
-    "rating": 4.7,
-    "reviewsCount": 342,
-    "thumbnail": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
-    "images": [
-      "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae",
-      "https://images.unsplash.com/photo-1517336714739-489689fd1ca8"
-    ],
-    "description": "Compact wireless mechanical keyboard with RGB lighting.",
-    "tags": ["keyboard", "wireless", "gaming"],
-    "isFeatured": true,
-    "createdAt": "2026-05-12T10:00:00Z"
-  },
-  {
-    "id": 2,
-    "title": "Gaming Mouse Pro X",
-    "slug": "gaming-mouse-pro-x",
-    "brand": "HyperTech",
-    "category": "Electronics",
-    "price": 49.99,
-    "discountPrice": 39.99,
-    "stock": 30,
-    "rating": 4.5,
-    "reviewsCount": 210,
-    "thumbnail": "https://images.unsplash.com/photo-1527814050087-3793815479db",
-    "images": [],
-    "description": "Ergonomic gaming mouse with ultra-fast response.",
-    "tags": ["mouse", "gaming"],
-    "isFeatured": false,
-    "createdAt": "2026-05-10T08:00:00Z"
-  },
-  {
     "id": 3,
     "title": "4K Ultra HD Monitor",
     "slug": "4k-ultra-hd-monitor",
@@ -217,20 +178,5 @@
     "tags": ["shoes", "sports"],
     "isFeatured": true,
     "createdAt": "2026-04-29T15:00:00Z"
-  },
-  {
-    "id": 1778912722145,
-    "title": "Nike Revolution 7",
-    "slug": "nike-revolution-7",
-    "brand": "Nike",
-    "category": "Sports",
-    "price": 89.99,
-    "discountPrice": 74.99,
-    "stock": 40,
-    "thumbnail": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-    "images": ["https://images.unsplash.com/photo-1542291026-7eec264c27ff"],
-    "description": "Comfortable running shoes for daily training.",
-    "tags": ["shoes", "running", "nike"],
-    "isFeatured": false
   }
 ]

@@ -29,6 +29,15 @@ export const productController = async (
   } else if (method === 'GET' && productId !== null) {
     const products = readProduct()
     const product = products.find((p: IProduct) => p.id === productId)
+    if (!product) {
+      res.writeHead(404, { 'content-type': 'application/json' })
+      res.end(
+        JSON.stringify({
+          message: 'Product not found',
+          data: product
+        })
+      )
+    }
     // console.log(product)
     // return product
     res.writeHead(200, { 'content-type': 'application/json' })
@@ -84,6 +93,31 @@ export const productController = async (
       JSON.stringify({
         message: 'Product updated successfully',
         data: products[index]
+      })
+    )
+  } else if (method === 'DELETE' && productId !== null) {
+    const products = readProduct()
+    const index = products.findIndex((p: IProduct) => p.id === productId)
+    if (index < 0) {
+      res.writeHead(404, {
+        'content-type': 'application/json'
+      })
+      res.end(
+        JSON.stringify({
+          message: 'Product not found',
+          data: null
+        })
+      )
+    }
+    products.splice(index, 1)
+    insertProduct(products)
+    res.writeHead(404, {
+      'content-type': 'application/json'
+    })
+    res.end(
+      JSON.stringify({
+        message: 'Product deleted successfully',
+        data: null
       })
     )
   } else {
