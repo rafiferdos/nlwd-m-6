@@ -111,7 +111,7 @@ export const productController = async (
     }
     products.splice(index, 1)
     insertProduct(products)
-    res.writeHead(404, {
+    res.writeHead(200, {
       'content-type': 'application/json'
     })
     res.end(
